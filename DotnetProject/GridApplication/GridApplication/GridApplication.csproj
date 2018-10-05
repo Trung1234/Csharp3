@@ -74,13 +74,20 @@
       <DependentUpon>BranchList.xaml</DependentUpon>
     </Compile>
     <Compile Include="BranchListViewModel.cs" />
-    <Compile Include="Product\ProductList.xaml.cs">
+    <Compile Include="ProductEdit.xaml.cs">
+      <DependentUpon>ProductEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProductTypeEdit.xaml.cs">
+      <DependentUpon>ProductTypeEdit.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProductTypeList.xaml.cs">
+      <DependentUpon>ProductTypeList.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProductType\ProductTypeViewModel.cs" />
+    <Compile Include="ProductList.xaml.cs">
       <DependentUpon>ProductList.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Product\ProductListViewModel.cs" />
-    <Compile Include="Window1.xaml.cs">
-      <DependentUpon>Window1.xaml</DependentUpon>
-    </Compile>
+    <Compile Include="Product\ProductViewModel.cs" />
     <Page Include="BranchEdit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -101,11 +108,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Product\ProductList.xaml">
+    <Page Include="ProductEdit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Window1.xaml">
+    <Page Include="ProductTypeEdit.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProductTypeList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProductList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

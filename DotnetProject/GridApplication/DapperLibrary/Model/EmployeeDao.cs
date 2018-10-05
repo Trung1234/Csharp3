@@ -27,7 +27,7 @@ namespace DapperLibrary.Model
             return x;
         }
        
-        public void Insert(EMPLOYEE emp)
+        public void Update(EMPLOYEE emp)
         {
             if (emp != null)
             {

@@ -50,8 +50,10 @@
     <Compile Include="Model\BranchDao.cs" />
     <Compile Include="Model\EMPLOYEE.cs" />
     <Compile Include="Model\EmployeeDao.cs" />
+    <Compile Include="Model\PRODUCT.cs" />
     <Compile Include="Model\ProductTypeDao.cs" />
     <Compile Include="Model\PRODUCT_TYPE.cs" />
+    <Compile Include="Model\ProductDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

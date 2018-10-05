@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace GridApplication
 {
     /// <summary>
-    /// Interaction logic for Window1.xaml
+    /// Interaction logic for ProductEdit.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class ProductEdit : Window
     {
-        public Window1()
+        public ProductEdit()
         {
             InitializeComponent();
         }
