@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\App.xaml
-7-32407290
+7-382342990
 
-14445695691
+18-1113222308
 17-307539871
-BranchEdit.xaml;BranchList.xaml;MainWindow.xaml;ProductEdit.xaml;ProductTypeEdit.xaml;ProductTypeList.xaml;ProductList.xaml;
+Views\Branch\BranchEdit.xaml;Views\Branch\BranchList.xaml;MainWindow.xaml;Views\Product\ProductEdit.xaml;Views\ProductType\ProductTypeEdit.xaml;Views\Product\ProductList.xaml;Views\ProductType\ProductTypeList.xaml;
 
 False
 

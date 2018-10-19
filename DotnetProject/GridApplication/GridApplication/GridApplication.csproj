@@ -67,32 +67,36 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="BranchEdit.xaml.cs">
+    <Compile Include="ViewModels\Branch\BranchEditViewModel.cs" />
+    <Compile Include="ViewModels\Branch\BranchListViewModel.cs" />
+    <Compile Include="Views\Branch\BranchEdit.xaml.cs">
       <DependentUpon>BranchEdit.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BranchList.xaml.cs">
+    <Compile Include="Views\Branch\BranchList.xaml.cs">
       <DependentUpon>BranchList.xaml</DependentUpon>
     </Compile>
-    <Compile Include="BranchListViewModel.cs" />
-    <Compile Include="ProductEdit.xaml.cs">
+    <Compile Include="Views\Product\ProductEdit.xaml.cs">
       <DependentUpon>ProductEdit.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ProductTypeEdit.xaml.cs">
+    <Compile Include="ViewModels\Product\ProductListViewModel.cs" />
+    <Compile Include="Views\ProductType\ProductTypeEdit.xaml.cs">
       <DependentUpon>ProductTypeEdit.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ProductTypeList.xaml.cs">
-      <DependentUpon>ProductTypeList.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ProductType\ProductTypeViewModel.cs" />
-    <Compile Include="ProductList.xaml.cs">
+    <Compile Include="Views\Product\ProductList.xaml.cs">
       <DependentUpon>ProductList.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Product\ProductViewModel.cs" />
-    <Page Include="BranchEdit.xaml">
+    <Compile Include="RelayCommand.cs" />
+    <Compile Include="ViewModels\BaseClass.cs" />
+    <Compile Include="ViewModels\ProductType\ProductTypeEditViewModel.cs" />
+    <Compile Include="ViewModels\ProductType\ProductTypeListViewModel.cs" />
+    <Compile Include="Views\ProductType\ProductTypeList.xaml.cs">
+      <DependentUpon>ProductTypeList.xaml</DependentUpon>
+    </Compile>
+    <Page Include="Views\Branch\BranchEdit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="BranchList.xaml">
+    <Page Include="Views\Branch\BranchList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -108,19 +112,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="ProductEdit.xaml">
+    <Page Include="Views\Product\ProductEdit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ProductTypeEdit.xaml">
+    <Page Include="Views\ProductType\ProductTypeEdit.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ProductTypeList.xaml">
+    <Page Include="Views\Product\ProductList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ProductList.xaml">
+    <Page Include="Views\ProductType\ProductTypeList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -161,6 +165,7 @@
       <Name>DapperLibrary</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

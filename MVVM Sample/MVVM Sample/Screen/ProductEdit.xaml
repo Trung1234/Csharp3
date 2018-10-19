@@ -1,0 +1,51 @@
+﻿<Window x:Class="MVVM_Sample.Screen.ProductEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MVVM_Sample.Screen"
+        mc:Ignorable="d" SizeToContent="WidthAndHeight"
+        Title="Chi tiết sản phẩm" Height="364.508" Width="223.303" FontSize="12"
+        xmlns:dataEdit="clr-namespace:MVVM_Sample.ViewModel" WindowStartupLocation="CenterScreen">
+    <Window.DataContext>
+        <dataEdit:ProductEditViewModel></dataEdit:ProductEditViewModel>
+    </Window.DataContext>
+
+    <Grid>
+        <Grid.Resources>
+            <Style TargetType="{x:Type TextBox}">
+                <Style.Triggers>
+                    <Trigger Property="Validation.HasError" Value="true">
+                        <Setter Property="ToolTip" Value="{Binding RelativeSource={RelativeSource Self},Path=(Validation.Errors)[0].ErrorContent}"/>
+                    </Trigger>
+                </Style.Triggers>
+            </Style>
+        </Grid.Resources>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20" ></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition ></RowDefinition>
+        </Grid.RowDefinitions>
+        <Border BorderBrush="Black" BorderThickness="1" Grid.Row="1" Margin="5">
+            <StackPanel Name="spProduct" Grid.Row="1" Orientation="Vertical" Margin="5">
+                <Label Content="Mã sản phẩm" Width="80" HorizontalAlignment="Left"></Label>
+                <TextBox Name="txtProductCD" Width="200" Text="{Binding ProductEdit.PRODUCT_CD,ValidatesOnDataErrors=True,UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Height="20"/>
+                <Label Content="NGày đặt hàng" Width="109" HorizontalAlignment="Left"></Label>
+                <DatePicker Name="dpDateOffer" SelectedDate="{Binding ProductEdit.DATE_OFFERED}" Width="104" HorizontalAlignment="Left" ></DatePicker>
+                <Label Content="Ngày giao hàng" Width="104" HorizontalAlignment="Left"></Label>
+                <DatePicker Name="dpRetied" SelectedDate="{Binding ProductEdit.DATE_RETIRED}" HorizontalAlignment="Left" Width="104"></DatePicker>
+                <Label Content="Tên" Width="80" HorizontalAlignment="Left"></Label>
+                <TextBox Name="txtName" Text="{Binding ProductEdit.NAME,ValidatesOnDataErrors=True,UpdateSourceTrigger=PropertyChanged,ValidatesOnNotifyDataErrors=True}" HorizontalAlignment="Center" Width="200" Height="20"/>
+                <Label Content="Tên" Width="80" HorizontalAlignment="Left"></Label>
+                <ComboBox Name="cbType" Width="200" ItemsSource="{Binding ProductTypeList}" SelectedItem="{Binding ProductTypeSelected}" DisplayMemberPath="NAME" SelectedValue="{Binding ProductEdit.PRODUCT_TYPE_CD}"></ComboBox>
+            </StackPanel>
+        </Border>
+        <Border Grid.Row="2" BorderBrush="Black" BorderThickness="1" VerticalAlignment="Bottom" Margin="5">
+            <StackPanel  Name="spFunction" Orientation="Horizontal"  HorizontalAlignment="Center" VerticalAlignment="Bottom">
+                <Button Name="btnExecute" Width="55" Height="24" Content="Thực hiện" Margin="2" Command="{Binding ExecuteCommand}" CommandParameter="{Binding ElementName=spProduct}"></Button>
+                <Button Name="btnCancel" Width="55" Height="24" Content="Hủy" Margin="2" Command="{Binding CancelCommand}" CommandParameter="{Binding ElementName=spProduct}"></Button>
+            </StackPanel>
+        </Border>
+    </Grid>
+
+</Window>

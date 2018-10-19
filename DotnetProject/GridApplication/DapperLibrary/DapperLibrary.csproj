@@ -45,15 +45,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
     <Compile Include="Model\BRANCH.cs" />
-    <Compile Include="Model\BranchDao.cs" />
+    <Compile Include="Dao\BranchDao.cs" />
     <Compile Include="Model\EMPLOYEE.cs" />
     <Compile Include="Model\EmployeeDao.cs" />
     <Compile Include="Model\PRODUCT.cs" />
-    <Compile Include="Model\ProductTypeDao.cs" />
+    <Compile Include="Dao\ProductTypeDao.cs" />
     <Compile Include="Model\PRODUCT_TYPE.cs" />
-    <Compile Include="Model\ProductDao.cs" />
+    <Compile Include="Dao\ProductDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
