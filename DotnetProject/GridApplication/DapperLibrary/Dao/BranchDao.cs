@@ -31,8 +31,12 @@ namespace DapperLibrary.Model
             {
                 try
                 {
-                    var x = db.Query<BRANCH>("SELECT * FROM BRANCH WHERE BRANCH_ID LIKE '%" + input + "%' OR " + 
-                        "CITY LIKE '%" + input + "%' OR NAME LIKE '%" + input + "%' OR STATE LIKE '%" + input + "%' OR ZIP_CODE LIKE '%" + input+ "%'").ToList();
+                    var x = db.Query<BRANCH>("SELECT * FROM BRANCH WHERE BRANCH_ID LIKE '%"
+                        + input + "%' OR " +
+                        "CITY LIKE '%" + input + "%' OR NAME LIKE '%"
+                        + input + "%' OR STATE LIKE '%"
+                        + input + "%' OR ZIP_CODE LIKE '%"
+                        + input + "%'").ToList();
                     return x;
                 }
                 catch
@@ -43,9 +47,22 @@ namespace DapperLibrary.Model
             }
             return null;
         }
+        public List<BRANCH> SearchByParameter(string name, string address, string city)
+        {
+            var list = db.Query<BRANCH>("SELECT * FROM BRANCH").ToList();
+            if (!string.IsNullOrEmpty(name))
+                list = list.Where(p => p.NAME.Contains(name)).ToList();
+            if (!string.IsNullOrEmpty(address))
+                list = list.Where(p => p.ADDRESS.Contains(address)).ToList();
+            if (!string.IsNullOrEmpty(city))
+                list = list.Where(p => p.CITY.Contains(city)).ToList();
+            return list;
+        }
+
+
         public List<BRANCH> SearchByName(string name)
         {
-            if(name != null)
+            if (name != null)
             {
                 try
                 {
@@ -56,17 +73,73 @@ namespace DapperLibrary.Model
                 {
                     return null;
                 }
-                
+
             }
             return null;
+        }
+        public List<BRANCH> SearchByCity(string city)
+        {
+            if (city != null)
+            {
+                try
+                {
+                    var x = db.Query<BRANCH>("SELECT * FROM BRANCH WHERE [CITY] LIKE '%" + city + "%'").ToList();
+                    return x;
+                }
+                catch
+                {
+                    return null;
+                }
+
+            }
+            return null;
+        }
+        public List<BRANCH> SearchByAddress(string address)
+        {
+            if (address != null)
+            {
+                try
+                {
+                    var x = db.Query<BRANCH>("SELECT * FROM BRANCH WHERE [ADDRESS] LIKE '%" + address + "%'").ToList();
+                    return x;
+                }
+                catch
+                {
+                    return null;
+                }
+
+            }
+            return null;
+        }
+        public void Add(BRANCH branch)
+        {
+            if (branch != null)
+            {
+                string sql = "INSERT INTO [dbo].[BRANCH] ([ADDRESS] ,[CITY] ,[NAME] ,[STATE],[ZIP_CODE])  VALUES " +
+           "('" + branch.ADDRESS + "', '" + branch.CITY + "','" + branch.NAME + "', '" + branch.STATE + "','" + branch.ZIP_CODE + "')";
+                try
+                {
+                    db.Execute(sql);
+                }
+                catch
+                {
+                    throw new Exception();
+                }
+
+            }
         }
         public void Update(BRANCH branch)
         {
             if (branch != null)
             {
+                string sql = "UPDATE [dbo].[BRANCH] SET [ADDRESS] ='" + branch.ADDRESS + "'" +
+      ",[CITY] = '" + branch.CITY + "'" +
+      ", NAME = '" + branch.NAME + "'" +
+      ", STATE = '" + branch.STATE + "'" +
+      ", ZIP_CODE = '" + branch.ZIP_CODE + "'" + " WHERE BRANCH_ID = '" + branch.BRANCH_ID + "'";
                 try
                 {
-                    db.Execute("UPDATE BRANCH SET NAME='" + branch.NAME + "' WHERE EMP_ID='" + branch.BRANCH_ID + "'");
+                    db.Execute(sql);
                 }
                 catch { throw new Exception(); }
             }

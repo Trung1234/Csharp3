@@ -48,12 +48,13 @@
     <Compile Include="Model\BRANCH.cs" />
     <Compile Include="Dao\BranchDao.cs" />
     <Compile Include="Model\EMPLOYEE.cs" />
-    <Compile Include="Model\EmployeeDao.cs" />
+    <Compile Include="Dao\EmployeeDao.cs" />
     <Compile Include="Model\PRODUCT.cs" />
     <Compile Include="Dao\ProductTypeDao.cs" />
     <Compile Include="Model\PRODUCT_TYPE.cs" />
     <Compile Include="Dao\ProductDao.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Ultils\CommonUltil.cs" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>

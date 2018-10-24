@@ -16,7 +16,8 @@ namespace GridApplication.ViewModels
     public class ProductTypeEditViewModel : BaseClass
     {
         public static bool isNew = false;
-
+        public ICommand ExecuteCommand { get; set; }
+        public ICommand CloseCommand { get; set; }
         private static PRODUCT_TYPE _productTypeEdit;
         public static PRODUCT_TYPE ProductTypeEdit
         {
@@ -31,18 +32,26 @@ namespace GridApplication.ViewModels
             else
 
                 ExecuteCommand = new RelayCommand<FrameworkElement>(p => { return true; }, p => { Edit(p); });
+            CloseCommand = new RelayCommand<FrameworkElement>(p => { return true; }, p => { BaseClass.CloseForm(p); });
         }
 
+        //}
         private void AddNew(FrameworkElement p)
         {
             GetData(p);
             ProductTypeDao.Instance().Add(ProductTypeEdit);
             //ProductTypeListViewModel.ProductTypeLists=new ObservableCollection<PRODUCT_TYPE>()
+            CloseForm(p);
         }
         private void Edit(FrameworkElement p)
         {
-            GetData(p);
-            ProductTypeDao.Instance().Update(ProductTypeEdit);
+            MessageBoxResult dlg= MessageBox.Show("Co chac chan muon sua khong?", "Xac nhan sua", MessageBoxButton.YesNo, MessageBoxImage.Question);
+            if (dlg == MessageBoxResult.Yes)
+            {
+                GetData(p);
+                ProductTypeDao.Instance().Update(ProductTypeEdit);
+                CloseForm(p);
+            }
         }
         private void GetData(FrameworkElement p)
         {
@@ -86,8 +95,7 @@ namespace GridApplication.ViewModels
             set { _ProductType = value; OnPropertyChanged("ProductTypeSelected"); }
         }
 
-        public ICommand ExecuteCommand { get; set; }
-        public ICommand CancelCommand { get; set; }
+        
 
 
 

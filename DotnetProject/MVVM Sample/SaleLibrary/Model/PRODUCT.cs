@@ -42,6 +42,7 @@ namespace SaleLibrary.Model
             get
             {
                 return (this as IDataErrorInfo).Error;
+                
             }
         }
 

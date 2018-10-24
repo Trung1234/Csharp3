@@ -16,23 +16,25 @@
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
         <Border BorderBrush="Black" BorderThickness="1" Grid.Row="0" Margin="2">
-            <StackPanel Orientation="Vertical" Margin="2" >
+            <StackPanel Name="spBranchEdit" Orientation="Vertical" Margin="2" >
                 <Label Margin="5" Content="Adress"></Label>
-                <TextBox Name="txtAddress" Height="24" Margin="5" Text="{Binding BranchEdit.ADDRESS, Mode=TwoWay}"></TextBox>
+                <TextBox Name="txtAddress" Height="24" Margin="5" Text="{Binding BranchEdit.ADDRESS,ValidatesOnDataErrors=True,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"></TextBox>
                 <Label Margin="5" Content="City"></Label>
-                <TextBox Name="txtCity" Height="24" Margin="5" Text="{Binding BranchEdit.CITY, Mode=TwoWay}"></TextBox>
+                <TextBox Name="txtCity" Height="24" Margin="5" Text="{Binding BranchEdit.CITY,ValidatesOnDataErrors=True,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"></TextBox>
                 <Label Margin="5" Content="Name"></Label>
-                <TextBox Name="txtName" Height="24" Margin="5" Text="{Binding BranchEdit.NAME, Mode=TwoWay}"></TextBox>
+                <TextBox Name="txtName" Height="24" Margin="5" Text="{Binding BranchEdit.NAME,ValidatesOnDataErrors=True,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"></TextBox>
                 <Label Margin="5" Content="Zip Code"></Label>
-                <TextBox Name="btnZip" Height="24" Margin="5" Text="{Binding BranchEdit.ZIP_CODE, Mode=TwoWay}"></TextBox>
+                <TextBox Name="txtZip" Height="24" Margin="5" Text="{Binding BranchEdit.ZIP_CODE,ValidatesOnDataErrors=True,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"></TextBox>
                 <Label Margin="5" Content="State"></Label>
-                <TextBox Name="btnState" Height="24" Margin="5" Text="{Binding BranchEdit.STATE, Mode=TwoWay}"></TextBox>
+                <TextBox Name="txtState" Height="24" Margin="5" Text="{Binding BranchEdit.STATE,ValidatesOnDataErrors=True,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"></TextBox>
             </StackPanel>
         </Border>
         <Border BorderBrush="Black" BorderThickness="1" Grid.Row="1" Margin="2">
             <StackPanel  Orientation="Horizontal" HorizontalAlignment="Center">
-                <Button Name="btnOK" Content="Dong Y" Margin="3" Width="60"></Button>
-                <Button Name="btnCancel" Content="Huy Bo" Margin="3" Width="60"></Button>
+                <Button Name="btnOK" Content="Dong Y" Margin="3" Width="60" 
+                        Command="{Binding ExecuteCommand}" CommandParameter="{Binding ElementName=spBranchEdit}"></Button>
+                <Button Name="btnCancel" Content="Huy Bo" Margin="3" Width="60"
+                        Command="{Binding CloseCommand}" CommandParameter="{Binding ElementName= spBranchEdit}"></Button>
             </StackPanel>
         </Border>
     </Grid>

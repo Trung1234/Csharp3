@@ -5,6 +5,7 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace GridApplication.ViewModels
 {
@@ -17,5 +18,22 @@ namespace GridApplication.ViewModels
             if (handler != null)
                 handler(this, new PropertyChangedEventArgs(propertyName));
         }
+        public static void CloseForm(FrameworkElement p)
+        {
+            if (p != null)
+            {
+                var sp = p as FrameworkElement;
+                if (sp != null)
+                {
+                    var curParent = sp.Parent;
+                    if (curParent != null)
+                        CloseForm(curParent as FrameworkElement);
+                    else
+                        (sp as Window).Close();
+                }
+            }
+        }
     }
+   
+    
 }

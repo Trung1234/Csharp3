@@ -11,3 +11,4 @@ C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\DapperLibrar
 C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\DapperLibrary\bin\Debug\Dapper.xml
 C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\DapperLibrary\obj\Debug\DapperLibrary.dll
 C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\DapperLibrary\obj\Debug\DapperLibrary.pdb
+C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\DapperLibrary\obj\Debug\DapperLibrary.csprojResolveAssemblyReference.cache

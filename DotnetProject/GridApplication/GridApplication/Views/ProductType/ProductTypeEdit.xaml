@@ -18,9 +18,10 @@
         <Border BorderBrush="Black" BorderThickness="1" Grid.Row="0" Margin="2">
             <StackPanel Name="spProductType" Orientation="Vertical" Margin="2" >
                 <Label Margin="5" Content="Product Type CD"></Label>
-                <TextBox Name="txtTypeCD" Height="24" Margin="5" Text="{Binding ProductTypeEdit.PRODUCT_TYPE_CD, Mode=TwoWay}"></TextBox>
+                <TextBox Name="txtTypeCD" Height="24" Margin="5" Text="{Binding ProductTypeEdit.PRODUCT_TYPE_CD,ValidatesOnDataErrors=True,UpdateSourceTrigger=PropertyChanged,Mode=TwoWay}"></TextBox>
+                <Label FontWeight="Bold" Foreground="Red" Content="{Binding ElementName=txtTypeCD,Path=(Validation.Errors).CurrentItem.ErrorContent}"></Label>
                 <Label Margin="5" Content="Name"></Label>
-                <TextBox Name="txtName" Height="24" Margin="5" Text="{Binding ProductTypeEdit.NAME, Mode=TwoWay}"></TextBox>
+                <TextBox Name="txtName" Height="24" Margin="5" Text="{Binding ProductTypeEdit.NAME,ValidatesOnDataErrors=True,UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"></TextBox>
 
 
             </StackPanel>
@@ -28,7 +29,8 @@
         <Border BorderBrush="Black" BorderThickness="1" Grid.Row="1" Margin="2">
             <StackPanel  Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button Name="btnOK" Content="Dong Y" Margin="3" Width="60" Command="{Binding ExecuteCommand}" CommandParameter="{Binding ElementName= spProductType}"></Button>
-                <Button Name="btnCancel" Content="Huy Bo" Margin="3" Width="60"></Button>
+                <Button Name="btnCancel" Content="Huy Bo" Margin="3" Width="60"
+                        Command="{Binding CloseCommand}" CommandParameter="{Binding ElementName= spProductType}"></Button>
             </StackPanel>
         </Border>
     </Grid>

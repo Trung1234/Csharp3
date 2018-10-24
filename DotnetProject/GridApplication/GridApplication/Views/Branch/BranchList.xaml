@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:GridApplication"
         xmlns:localViewModel="clr-namespace:GridApplication.ViewModels.Branch"
         mc:Ignorable="d"
-        Title="BranchList" Height="300" Width="600">
+        Title="BranchList" Height="350" Width="850">
     <Window.DataContext>
         <localViewModel:BranchListViewModel></localViewModel:BranchListViewModel>
        
@@ -17,11 +17,14 @@
             <RowDefinition></RowDefinition>
             <RowDefinition Height="Auto"></RowDefinition>
         </Grid.RowDefinitions>
-        <StackPanel Orientation="Horizontal" Grid.Row="0">
+        <StackPanel Name="spFilter" Orientation="Horizontal" Grid.Row="0">
             <Label Content="Tim kiem" Margin="2"></Label>
-            <TextBox x:Name="txtFind" Width="150" Margin="2,2,2,1.6"/>
-            <Button Name="btnFind" Content="Tim kiem" Margin="2"
-                   Command="{Binding filterCommand}" CommandParameter="{Binding ElementName=txtFind,Path=Text}"></Button>
+            <TextBox x:Name="txtFindName" Width="150" Margin="2,2,2,1.6"/>
+            <TextBox x:Name="txtFindCity" Width="150" Margin="2,2,2,1.6"/>
+            <TextBox x:Name="txtFindAddress" Width="150" Margin="2,2,2,1.6"/>
+            <Button Name="btnFindAddress" Content="Tim theo dia chi" Margin="2"
+                   Command="{Binding filterCommand}"
+                    CommandParameter="{Binding ElementName=spFilter}"></Button>
         </StackPanel>
         <ListView Name="ListBranch"  Grid.ColumnSpan="2" Grid.Row="1" Margin="5" ItemsSource="{Binding BranchLists,Mode=TwoWay}">
             <ListView.View>

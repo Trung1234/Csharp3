@@ -23,6 +23,7 @@ namespace GridApplication
         {
             
             InitializeComponent();
+          
         }
     }
 }
