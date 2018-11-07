@@ -18,7 +18,8 @@ namespace DapperLibrary.Model
             if (_instance == null) _instance = new ProductTypeDao();
             return _instance;
         }
-
+        public ProductTypeDao()
+        { }
         static IDbConnection db = new SqlConnection(ConfigurationManager.ConnectionStrings["Test"].ConnectionString);
         public List<PRODUCT_TYPE> GetALL()
         {
@@ -29,15 +30,12 @@ namespace DapperLibrary.Model
         {
             if (typeCD != null)
             {
-                try
-                {
-                    var x = db.Query<PRODUCT_TYPE>("SELECT * FROM PRODUCT_TYPE WHERE PRODUCT_TYPE_CD like '%" + typeCD + "%'").ToList();
-                    return x;
-                }
-                catch {
-                    return null;
-                }
+
+                var x = db.Query<PRODUCT_TYPE>("SELECT * FROM PRODUCT_TYPE WHERE PRODUCT_TYPE_CD like '%" + typeCD + "%'").ToList();
+                return x;
+
             }
+
             return null;
         }
         public void Update(PRODUCT_TYPE type)
@@ -53,7 +51,7 @@ namespace DapperLibrary.Model
         }
         public void Add(PRODUCT_TYPE type)
         {
-            if(type != null)
+            if (type != null)
             {
                 try
                 {
@@ -61,6 +59,11 @@ namespace DapperLibrary.Model
                 }
                 catch { throw new Exception(); }
 
+            }
+            else
+            {
+                try { }
+                catch { }
             }
         }
     }

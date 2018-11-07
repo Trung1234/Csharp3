@@ -78,6 +78,7 @@ namespace GridApplication.ViewModels
                                     ProductTypeEdit.NAME = tb.Text;
                                 }
                             }
+
                         }
                     }
                         

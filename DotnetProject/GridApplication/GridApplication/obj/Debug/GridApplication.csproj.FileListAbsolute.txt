@@ -28,39 +28,3 @@ C:\Users\LENOVO\Documents\Visual Studio 2015\Projects\GridApplication\GridApplic
 C:\Users\LENOVO\Documents\Visual Studio 2015\Projects\GridApplication\GridApplication\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\LENOVO\Documents\Visual Studio 2015\Projects\GridApplication\GridApplication\obj\Debug\BranchEdit.baml
 C:\Users\LENOVO\Documents\Visual Studio 2015\Projects\GridApplication\GridApplication\obj\Debug\BranchList.baml
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\bin\Debug\GridApplication.exe.config
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\bin\Debug\GridApplication.exe
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\bin\Debug\GridApplication.pdb
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\bin\Debug\DapperLibrary.dll
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\bin\Debug\MaterialDesignColors.dll
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\bin\Debug\MaterialDesignThemes.Wpf.dll
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\bin\Debug\Simpu.Cryptography.dll
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\bin\Debug\Dapper.dll
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\bin\Debug\DapperLibrary.pdb
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\bin\Debug\MaterialDesignThemes.Wpf.pdb
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\bin\Debug\MaterialDesignThemes.Wpf.xml
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\bin\Debug\Dapper.xml
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\GridApplication.csprojResolveAssemblyReference.cache
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\Views\Branch\BranchEdit.g.cs
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\Views\Branch\BranchList.g.cs
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\MainWindow.g.cs
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\Views\Product\ProductEdit.g.cs
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\Views\ProductType\ProductTypeEdit.g.cs
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\Views\Product\ProductList.g.cs
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\Views\ProductType\ProductTypeList.g.cs
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\App.g.cs
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\GeneratedInternalTypeHelper.g.cs
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\GridApplication_MarkupCompile.cache
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\GridApplication_MarkupCompile.lref
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\Views\Branch\BranchEdit.baml
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\Views\Branch\BranchList.baml
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\MainWindow.baml
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\Views\Product\ProductEdit.baml
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\Views\ProductType\ProductTypeEdit.baml
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\Views\Product\ProductList.baml
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\Views\ProductType\ProductTypeList.baml
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\GridApplication.g.resources
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\GridApplication.Properties.Resources.resources
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\GridApplication.csproj.GenerateResource.Cache
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\GridApplication.exe
-C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\GridApplication\obj\Debug\GridApplication.pdb

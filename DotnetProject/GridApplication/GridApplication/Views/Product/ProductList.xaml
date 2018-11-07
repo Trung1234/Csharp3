@@ -24,7 +24,7 @@
             <Button Name="btnFind" Content="Tim kiem" Margin="2" 
                     Command="{Binding filterCommand}" CommandParameter="{Binding ElementName=txtFind,Path=Text}"></Button>
         </StackPanel>
-        <ListView Name="List4"  Grid.ColumnSpan="2" Grid.Row="1" Margin="5" ItemsSource="{Binding ProductLists,Mode=TwoWay}">
+        <ListView Name="ListProduct"  Grid.ColumnSpan="2" Grid.Row="1" Margin="5" ItemsSource="{Binding ProductLists,Mode=TwoWay}">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="ID" DisplayMemberBinding="{Binding PRODUCT_CD}"/>
@@ -37,8 +37,10 @@
             </ListView.View>
         </ListView>
         <StackPanel Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center">
-            <Button Name="btnExec" Content="Thuc hien" Margin="3" Width="60"></Button>
-            <Button Name="btnCancel" Content="Huy" Margin="3" Width="60"></Button>
+            <Button Name="btnAdd" Content="Them moi" Margin="3" Width="60"
+                    Command="{Binding ShowEditForm}" ></Button>
+            <Button Name="btnModify" Content="Sua" Margin="3" Width="60"
+                   Command="{Binding ShowEditForm}" CommandParameter="{Binding ElementName=ListProduct,Path=SelectedItem}"></Button>
         </StackPanel>
     </Grid>
 </Window>

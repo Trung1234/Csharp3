@@ -13,7 +13,7 @@ namespace DapperLibrary.Model
        
         public DateTime DATE_RETIRED { get; set; }
         public string NAME { get; set; }
-        public string PRODUCT_TYPE_CD { get; set; }
-      
+        public string  PRODUCT_TYPE_CD { get; set; }
+
     }
 }

@@ -30,7 +30,7 @@ namespace DapperLibrary.Ultils
         public static string ValidateID(int numb)
         {
             string result = null;
-            int Num;
+         
             bool isNum = int.TryParse(numb.ToString(), out numb);
             if (isNum)
                 result = "Đây không phải số";

@@ -92,60 +92,7 @@ namespace GridApplication.ViewModels.Branch
                     );
             }
         }
-        //public void BindingSearchName()
-        //{
-        //    filterNameCommand = new RelayCommand<string>(p => { return true; }, p => { SearchByName(p); });
-        //    if (BranchItem != null)
-        //        ShowEditForm = new RelayCommand<BRANCH>(
-        //            p => { return p != null ? true : false; },
-        //            p =>
-        //            {
-        //                ShowEdit(p);
-        //            });
-        //    else
-        //    {
-        //        ShowEditForm = new RelayCommand<BRANCH>(
-        //            p => { return true; },
-        //            p => { ShowEdit(p); }
-        //            );
-        //    }
-        //}
-        //public void BindingSearchAddress()
-        //{
-        //    filterNameCommand = new RelayCommand<string>(p => { return true; }, p => { SearchByAddress(p); });
-        //    if (BranchItem != null)
-        //        ShowEditForm = new RelayCommand<BRANCH>(
-        //            p => { return p != null ? true : false; },
-        //            p =>
-        //            {
-        //                ShowEdit(p);
-        //            });
-        //    else
-        //    {
-        //        ShowEditForm = new RelayCommand<BRANCH>(
-        //            p => { return true; },
-        //            p => { ShowEdit(p); }
-        //            );
-        //    }
-        //}
-        //public void BindingSearchCity()
-        //{
-        //    filterNameCommand = new RelayCommand<string>(p => { return true; }, p => { SearchByCity(p); });
-        //    if (BranchItem != null)
-        //        ShowEditForm = new RelayCommand<BRANCH>(
-        //            p => { return p != null ? true : false; },
-        //            p =>
-        //            {
-        //                ShowEdit(p);
-        //            });
-        //    else
-        //    {
-        //        ShowEditForm = new RelayCommand<BRANCH>(
-        //            p => { return true; },
-        //            p => { ShowEdit(p); }
-        //            );
-        //    }
-        //}
+  
         private BRANCH _BranchItem;
         public BRANCH BranchItem
         {

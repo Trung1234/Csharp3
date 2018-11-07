@@ -1,0 +1,6 @@
+C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\DapperLibrary\bin\Release\DapperLibrary.dll
+C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\DapperLibrary\bin\Release\DapperLibrary.pdb
+C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\DapperLibrary\bin\Release\Dapper.dll
+C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\DapperLibrary\bin\Release\Dapper.xml
+C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\DapperLibrary\obj\Release\DapperLibrary.dll
+C:\Users\LENOVO\Desktop\DotnetProject\DotnetProject\GridApplication\DapperLibrary\obj\Release\DapperLibrary.pdb

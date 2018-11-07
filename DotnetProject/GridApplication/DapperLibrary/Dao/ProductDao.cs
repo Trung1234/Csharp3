@@ -47,10 +47,34 @@ namespace DapperLibrary.Model
             {
                 try
                 {
-                    db.Execute("UPDATE PRODUCT SET NAME='" + product.NAME + "' WHERE PRODUCT_TYPE_CD='" + product.PRODUCT_CD + "'");
+                    db.Execute("UPDATE PRODUCT SET NAME='" + product.NAME + 
+                        "' WHERE PRODUCT_TYPE_CD='" + product.PRODUCT_CD + "'");
                 }
                 catch { throw new Exception(); }
             }
+        }
+        public List<PRODUCT> Search(string input)
+        {
+            if (input != null)
+            {
+                try
+                {
+                    string search = "SELECT * FROM PRODUCT WHERE [PRODUCT_CD] LIKE '%"
+                        + input + "%' OR " +
+                        "[DATE_OFFERED] LIKE '%" + input + "%' OR [DATE_RETIRED] LIKE '%"
+                        + input + "%' OR [NAME] LIKE '%"
+                        + input + "%' OR [PRODUCT_TYPE_CD] LIKE '%"
+                        + input + "%'";
+                    var x = db.Query<PRODUCT>(search).ToList();
+                    return x;
+                }
+                catch
+                {
+                    return null;
+                }
+
+            }
+            return null;
         }
         public void Add(PRODUCT product)
         {
@@ -58,10 +82,16 @@ namespace DapperLibrary.Model
             {
                 try
                 {
-                    db.Execute("INSERT INTO [dbo].[PRODUCT]([PRODUCT_CD],[DATE_OFFERED],[DATE_RETIRED],[NAME],[PRODUCT_TYPE_CD])" 
-                        +" VALUES('" + product.PRODUCT_TYPE_CD + "','" + product.DATE_OFFERED + "','" + product.DATE_RETIRED + "','" + product.NAME + "')");
+                    string sql = "INSERT INTO [dbo].[PRODUCT]([PRODUCT_CD],[DATE_OFFERED],[DATE_RETIRED],[NAME],[PRODUCT_TYPE_CD])"
+                        + " VALUES('" + product.PRODUCT_CD + "','"
+                        + product.DATE_OFFERED + "','"
+                        + product.DATE_RETIRED + "','"
+                        + product.NAME + "','"
+                        + product.PRODUCT_TYPE_CD + "')";
+                    db.Execute(sql);
                 }
-                catch { throw new Exception(); }
+                catch
+                { throw new Exception(); }
             }
         }
     }
