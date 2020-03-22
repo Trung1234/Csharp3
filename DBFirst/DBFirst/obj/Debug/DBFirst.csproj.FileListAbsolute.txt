@@ -1,0 +1,11 @@
+C:\Users\Admin\Desktop\Csharp3\DBFirst\DBFirst\bin\Debug\DBFirst.exe.config
+C:\Users\Admin\Desktop\Csharp3\DBFirst\DBFirst\bin\Debug\DBFirst.exe
+C:\Users\Admin\Desktop\Csharp3\DBFirst\DBFirst\bin\Debug\DBFirst.pdb
+C:\Users\Admin\Desktop\Csharp3\DBFirst\DBFirst\bin\Debug\EntityFramework.dll
+C:\Users\Admin\Desktop\Csharp3\DBFirst\DBFirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Admin\Desktop\Csharp3\DBFirst\DBFirst\bin\Debug\EntityFramework.xml
+C:\Users\Admin\Desktop\Csharp3\DBFirst\DBFirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Admin\Desktop\Csharp3\DBFirst\DBFirst\obj\Debug\DBFirst.csprojAssemblyReference.cache
+C:\Users\Admin\Desktop\Csharp3\DBFirst\DBFirst\obj\Debug\DBFirst.csproj.CopyComplete
+C:\Users\Admin\Desktop\Csharp3\DBFirst\DBFirst\obj\Debug\DBFirst.exe
+C:\Users\Admin\Desktop\Csharp3\DBFirst\DBFirst\obj\Debug\DBFirst.pdb
