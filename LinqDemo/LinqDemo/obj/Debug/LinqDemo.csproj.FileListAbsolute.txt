@@ -1,6 +1,0 @@
-c:\users\lenovo\documents\visual studio 2015\Projects\LinqDemo\LinqDemo\bin\Debug\LinqDemo.exe.config
-c:\users\lenovo\documents\visual studio 2015\Projects\LinqDemo\LinqDemo\bin\Debug\LinqDemo.exe
-c:\users\lenovo\documents\visual studio 2015\Projects\LinqDemo\LinqDemo\bin\Debug\LinqDemo.pdb
-c:\users\lenovo\documents\visual studio 2015\Projects\LinqDemo\LinqDemo\obj\Debug\LinqDemo.csprojResolveAssemblyReference.cache
-c:\users\lenovo\documents\visual studio 2015\Projects\LinqDemo\LinqDemo\obj\Debug\LinqDemo.exe
-c:\users\lenovo\documents\visual studio 2015\Projects\LinqDemo\LinqDemo\obj\Debug\LinqDemo.pdb
